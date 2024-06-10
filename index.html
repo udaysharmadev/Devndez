@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
 </head>
 
 <body class="relative">
@@ -70,6 +73,37 @@
             }, 300); // Match the duration of the transition
         });
     </script>
+
+
+    <main class="px-10 py-3 " style="font-family: 'Archivo', sans-serif;">
+        <section class="mt-3 md:mt-8 lg:mt-20 flex justify-between items-center flex-col w-full lg:flex-row">
+            <div class="rtext w-full">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl" style="font-weight: 550;">THE <span class="type"></span> <br> <span class="text-blue-700">AGENCY</span> DELIVERING <br>
+                    AFFORDABLE SOLUTIONS</h1>
+            </div>
+
+            <script>
+                const typed = new Typed('.type', {
+                  strings: ['DIGITAL', 'CREATIVE', 'INNOVATE', 'BRANDING', 'DESIGN'],
+                  typeSpeed: 50,
+                  backSpeed: 20,
+                  loop: true
+                });
+              </script>
+
+            <div class="lnumber w-full lg:w-1/4 flex flex-row items-center transform -rotate-0 lg:-rotate-90 p-10">
+                <div class="projectscompleted -ml-8 lg:ml-7">
+                    <h1 class="text-3xl md:text-6xl lg:text-4xl font-semibold">117 +</h1>
+                    <p class="text-l md:text-xl lg:text-l">PROJECTS COMPLETED</p>
+                </div>
+
+                <div class="projectscompleted ml-16 md:ml-20 lg:ml-9 mr-10 lg:-mr-4">
+                    <h1 class="text-3xl md:text-6xl lg:text-4xl font-semibold">3 +</h1>
+                    <p class="text-l md:text-xl lg:text-l">YEARS EXPERIENCE</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
