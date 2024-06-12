@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <link rel="stylesheet" href="loco.css">
 
     <style>
-        .custom-gradient {
+        .custom-gradient{
             background: linear-gradient(135deg, #000000 10%, #0000ff 100%, #ff0000 101%, #800080 100%);
         }
     </style>
 
 </head>
 
-<body class="relative">
+<body class="relative" id="main">
     <header>
         <nav class="flex flex-row justify-between lg:justify-between lg:px-10 px-6 py-3 items-center"
             style="font-family: 'Inter', sans-serif;">
@@ -34,25 +35,8 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
 
-            <div class="rs flex flex-row  items-center justify-center">
-                <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn -right-20 md:-right-72 lg:right-3 ml-4 md:-ml-5 lg:ml-0 text-sm md:text-l lg:text-lg" type="checkbox">
-                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
-                    <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
-                        <mask id="moon-mask">
-                            <rect x="0" y="0" width="20" height="20" fill="white"></rect>
-                            <circle cx="11" cy="3" r="8" fill="black"></circle>
-                        </mask>
-                        <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
-                        <g>
-                            <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
-                            <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
-                            <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
-                            <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
-                            <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
-                            <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
-                        </g>
-                    </svg>
-                </label>
+            <div class="rs flex flex-row  items-center justify-around">
+                
 
                 <style>
                     /* a clone from joshwcomeau.com 
@@ -84,7 +68,7 @@
                         transition: transform 0.4s ease;
                         transform: rotate(40deg);
                         top: 0;
-                        
+
                     }
 
                     .st-sunMoonThemeToggleBtn svg .sunMoon {
@@ -148,6 +132,7 @@
                             transform: scale(1);
                         }
                     }
+
                 </style>
 
                 <a href="#" class="hidden lg:flex">
@@ -159,7 +144,29 @@
                 </a>
             </div>
 
-            <div class="lg:hidden">
+            <div class="lg:hidden flex flex-row items-center">
+                <label for="themeToggle"
+                    class="themeToggle st-sunMoonThemeToggleBtn text-sm md:text-l lg:text-lg right-1"
+                    type="checkbox">
+                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                        <mask id="moon-mask">
+                            <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                            <circle cx="11" cy="3" r="8" fill="black"></circle>
+                        </mask>
+                        <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                        <g>
+                            <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                            <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                            <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                            <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                            <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                            <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                        </g>
+                    </svg>
+                </label>
+
+
                 <button id="menu-btn">
                     <i class="ri-menu-5-line text-2xl"></i>
                 </button>
@@ -269,6 +276,13 @@
                 </div>
             </div>
         </section>
+
+
+
+        
+        
+        
+        
     </main>
 
 
@@ -382,6 +396,9 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
 
 
 </body>
