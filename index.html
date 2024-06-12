@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="loco.css">
 
     <style>
-        
         .custom-gradient {
             background: linear-gradient(135deg, #000000 10%, #0000ff 100%, #ff0000 101%, #800080 100%);
         }
@@ -131,7 +130,7 @@
         <nav class="flex flex-row justify-between lg:justify-between lg:px-10 px-6 py-3 items-center"
             style="font-family: 'Inter', sans-serif;">
             <div class="logo">
-                <img src="logo.png" alt="Logo" width="130px">
+                <img id="logo" src="logo.png" alt="Logo" width="130px">
             </div>
             <ul class="flex-row justify-between gap-8 font-semibold text-lg ml-10 hidden lg:flex">
                 <li><a href="/index.html">Home</a></li>
@@ -270,6 +269,82 @@
                     </svg>
                 </label>
 
+                <style>
+                    body {
+                        transition: background-color 0.3s, color 0.3s;
+                    }
+
+                    body.light-theme {
+                        --logo-color: black;
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+
+                    body.dark-theme {
+                        --logo-color: white;
+                        background-color: #000000;
+                        color: #ffffff;
+                    }
+
+                    #logo {
+                        mix-blend-mode: difference;
+                        filter: invert(1);
+                        transition: filter 0.3s;
+                    }
+
+                    body.light-theme #logo {
+                        mix-blend-mode: unset;
+                        filter: none;
+                    }
+
+                    body.dark-theme #logo {
+                        mix-blend-mode: difference;
+                        filter: invert(1);
+                    }
+
+                    main i {
+                        color: #000;
+                    }
+
+                    .photu h1 {
+                        color: #000;
+                    }
+
+                    #ser {
+                        color: white;
+                    }
+
+                    #team {
+                        color: #dfcdcd;
+                    }
+                </style>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                        const themeToggleInput = document.getElementById('themeToggle');
+                        const currentTheme = localStorage.getItem('theme') || 'light';
+                        document.body.classList.add(currentTheme + '-theme');
+                        if (currentTheme === 'dark') {
+                            themeToggleInput.checked = true;
+                        }
+
+                        themeToggleInput.addEventListener('change', () => {
+                            if (themeToggleInput.checked) {
+                                document.body.classList.remove('light-theme');
+                                document.body.classList.add('dark-theme');
+                                localStorage.setItem('theme', 'dark');
+                            } else {
+                                document.body.classList.remove('dark-theme');
+                                document.body.classList.add('light-theme');
+                                localStorage.setItem('theme', 'light');
+                            }
+                        });
+                    });
+
+
+                </script>
+
+
 
                 <button id="menu-btn">
                     <i class="ri-menu-5-line text-2xl"></i>
@@ -358,7 +433,7 @@
         </section>
 
 
-        <section class="grid grid-cols-1 gap-10 py-3 w-full lg:grid-cols-2 md:grid-cols-2 sm:w-full xl:w-[100%] "
+        <section class="photu grid grid-cols-1 gap-10 py-3 w-full lg:grid-cols-2 md:grid-cols-2 sm:w-full xl:w-[100%] "
             style="font-family: 'Archivo', sans-serif;">
             <div class="mockup bg-gray-200 rounded-3xl w-full bg sm:w-full xl:w-[100%] relative mt-3 lg:mt-0">
                 <img class="rounded-3xl" src="Untitled design(69).png" alt="">
@@ -374,7 +449,7 @@
                 <img class="rounded-3xl translate-y-4" src="Untitled design(70).png" alt="">
                 <div
                     class="likhit absolute top-5 right-7 md:top-7 md:right-10 text-l lg:text-xl flex flex-row justify-center items-center gap-2">
-                    <h1 class="text-white">SERVICES</h1>
+                    <h1 class="text-white" id="ser">SERVICES</h1>
                     <i class="ri-arrow-right-up-line bg-white rounded-full px-1"></i>
 
                 </div>
@@ -385,7 +460,7 @@
 
 
         <section style="font-family: 'Inter', sans-serif;" class="mb-10">
-            <h3 class="mt-8 text-2xl font-semibold text-gray-700">Our Team</h3>
+            <h3 class="mt-8 text-2xl font-semibold text-gray-700" id="team">Our Team</h3>
             <div class="textu flex flex-col md:flex-row justify-between items-center gap-3">
                 <h1 class="text-4xl md:text-5xl font-bold mt-2 md:mt-5 w-full md:1/2 lg:w-1/2">Let’s Meet Our <br> <span
                         class="text-blue-700">Dev N Dez</span> Innovators</h1>
@@ -456,9 +531,10 @@
                         </ul>
 
                     </div>
-                    <img src="uday.png" width="170px" alt="" class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
+                    <img src="uday.png" width="170px" alt=""
+                        class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
                 </div>
-                
+
 
                 <div
                     class="member w-full md:w-full rounded-3xl relative h-44 bg-gradient-to-r from-pink-600 to-violet-900 transition-all duration-300 ease-in-out  hover:shadow-lg mt-7 md:mt-0">
@@ -520,7 +596,8 @@
                         </ul>
 
                     </div>
-                    <img src="sumit.png" width="170px" alt="" class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
+                    <img src="sumit.png" width="170px" alt=""
+                        class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
                 </div>
 
 
@@ -532,8 +609,7 @@
                         <h3 class="text-xs md:text-sm lg:text-sm text-gray-200">Co-Founder & UI/UX Designer</h3>
                         <ul class="example-2 -ml-9 md:-ml-3 lg:-ml-10 mt-3">
                             <li class="icon-content">
-                                <a href="#" aria-label="Youtube"
-                                    data-social="youtube">
+                                <a href="#" aria-label="Youtube" data-social="youtube">
                                     <div class="filled"></div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-youtube" viewBox="0 0 16 16" xml:space="preserve">
@@ -585,7 +661,8 @@
                         </ul>
 
                     </div>
-                    <img src="sachin.png" width="170px" alt="" class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
+                    <img src="sachin.png" width="170px" alt=""
+                        class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
                 </div>
 
 
@@ -651,7 +728,8 @@
                         </ul>
 
                     </div>
-                    <img src="bhaiya.png" width="170px" alt="" class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
+                    <img src="bhaiya.png" width="170px" alt=""
+                        class="absolute bottom-0 -right-0 md:bottom-0 md:-right-0 lg:bottom-0 lg:right-10">
                 </div>
             </div>
         </section>
