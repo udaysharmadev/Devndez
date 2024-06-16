@@ -921,7 +921,7 @@
 
 
 
-        <div class="testimonial-section left-to-right" >
+        <div class="testimonial-section left-to-right">
             <div class="testimonial-wrapper text-xs">
                 <div
                     class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
@@ -1537,54 +1537,149 @@
         </div>
 
 
-        <section class="px-2 lg:px-10 " style="font-family: 'Inter', sans-serif;">
-            
+        <section class="px-2 lg:px-10 ml-0 md:ml-10 " style="font-family: 'Inter', sans-serif;">
+
 
             <div class="textm flex flex-col md:flex-row justify-between items-center gap-3">
-    <div class="testy w-full md:w-1/2 mt-0 md:-mt-6 lg:mt-0">
-        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 p-6 rounded-lg">
-            <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="4107d842-d4ba-4efb-827a-19a00b9f55dc">
+                <div class="testy w-full md:w-1/2 mt-0 md:-mt-6 lg:mt-0">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 p-6 rounded-lg">
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="4107d842-d4ba-4efb-827a-19a00b9f55dc">
 
-            <!-- Form Inputs. Each input must have a name="" attribute -->
-             <h2 class="text-blue-600 text-2xl">Get in touch</h2>
-            <h1 class="text-3xl font-semibold">Let’s Chat 👋, Consultation Is Free!</h1>
-            <p class="text-l text-gray-500 mb-7">Have questions or feedback? We're here to help. Send us a message, and we'll respond within 2 hours</p>
+                        <!-- Form Inputs. Each input must have a name="" attribute -->
+                        <h2 class="text-blue-600 text-2xl">Get in touch</h2>
+                        <h1 class="text-3xl font-semibold">Let’s Chat 👋, Consultation Is Free!</h1>
+                        <p class="text-l text-gray-500 mb-7">Have questions or feedback? We're here to help. Send us a
+                            message, and we'll respond within 2 hours</p>
 
-            <div>
-                <label for="name" class="block text-l font-medium text-gray-700">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <div>
+                            <label for="name" class="block text-l font-medium text-gray-700">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" required
+                                class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-l font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required
+                                class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-l font-medium text-gray-700">Message</label>
+                            <textarea name="message" id="message" placeholder="Message" required
+                                class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                        </div>
+
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div>
+                            <button type="submit"
+                                class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4">Submit</button>
+                        </div>
+
+                        <script src="https://web3forms.com/client/script.js" async defer></script>
+                    </form>
+
+                </div>
+                <img src="assets/fa1267_8d5e4df280eb42f496d1c6544a8eee8b~mv2.gif" id="img" alt=""
+                    class="hidden md:inline-block w-full md:w-1/2 lg:w-3/6 mr-0 md:mr-4 lg:mr-16 ml-0 md:ml-5">
+
+                <style>
+                    #img {
+                        margin-top: 60px;
+                    }
+                </style>
             </div>
-            <div>
-                <label for="email" class="block text-l font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            </div>
-            <div>
-                <label for="message" class="block text-l font-medium text-gray-700">Message</label>
-                <textarea name="message" id="message" placeholder="Message" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
-            </div>
-
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-            <div>
-                <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4">Submit</button>
-            </div>
-
-            <script src="https://web3forms.com/client/script.js" async defer></script>
-        </form>
-
-    </div>
-    <img src="assets/fa1267_8d5e4df280eb42f496d1c6544a8eee8b~mv2.gif" id="img" alt="" class="hidden md:inline-block w-full md:w-1/2 lg:w-3/6 mr-0 md:mr-4 lg:mr-16 ml-0 md:ml-5">
-
-    <style>
-        #img{
-            margin-top: 60px;
-        }
-    </style>
-</div>
-
-
         </section>
+
+
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="#4B5563" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="#374151" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="#1F2937" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#111827" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+
+
+            <style>
+                .waves {
+                    position: relative;
+                    width: 100%;
+                    height: 15vh;
+                    margin-bottom: -7px;
+                    /*Fix for safari gap*/
+                    min-height: 100px;
+                    max-height: 150px;
+                }
+
+                .content {
+                    position: relative;
+                    height: 20vh;
+                    text-align: center;
+                    background-color: gray;
+                }
+
+                /* Animation */
+
+                .parallax>use {
+                    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+                }
+
+                .parallax>use:nth-child(1) {
+                    animation-delay: -2s;
+                    animation-duration: 7s;
+                }
+
+                .parallax>use:nth-child(2) {
+                    animation-delay: -3s;
+                    animation-duration: 10s;
+                }
+
+                .parallax>use:nth-child(3) {
+                    animation-delay: -4s;
+                    animation-duration: 13s;
+                }
+
+                .parallax>use:nth-child(4) {
+                    animation-delay: -5s;
+                    animation-duration: 20s;
+                }
+
+                @keyframes move-forever {
+                    0% {
+                        transform: translate3d(-90px, 0, 0);
+                    }
+
+                    100% {
+                        transform: translate3d(85px, 0, 0);
+                    }
+                }
+
+                /*Shrinking for mobile*/
+                @media (max-width: 768px) {
+                    .waves {
+                        height: 40px;
+                        min-height: 40px;
+                    }
+
+                    .content {
+                        height: 30vh;
+                    }
+
+                    h1 {
+                        font-size: 24px;
+                    }
+                }
+            </style>
+            </div>
 
 
     </main>
