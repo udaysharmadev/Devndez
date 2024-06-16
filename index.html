@@ -921,7 +921,7 @@
 
 
 
-        <div class="testimonial-section left-to-right">
+        <div class="testimonial-section left-to-right" >
             <div class="testimonial-wrapper text-xs">
                 <div
                     class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
@@ -1450,7 +1450,8 @@
             .testimonial-card img {
                 object-fit: cover;
             }
-            .testimonial-card h1{
+
+            .testimonial-card h1 {
                 font-size: small;
             }
 
@@ -1458,7 +1459,7 @@
                 animation-play-state: paused;
             }
 
-            .testimonial-card:hover{
+            .testimonial-card:hover {
                 scale: 1.1;
                 transition: all 0.3s;
             }
@@ -1493,41 +1494,97 @@
         </style>
 
 
-    
 
 
 
 
 
-    <div class="w-full bg-gray-900 mb-10">
 
-    <div class="container mx-auto flex flex-col gap-y-8 md:gap-y-10 px-5 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 text-gray-200 bg-gray-900">
+        <div class="w-full bg-gray-900 mb-0 md:mb-5" style="font-family: 'Inter', sans-serif;">
 
-      <div class="w-full text-center">
+            <div
+                class="container mx-auto flex flex-col gap-y-8 md:gap-y-10 px-5 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 text-gray-200 bg-gray-900">
 
-        <div class="mb-4 text-white text-3xl md:text-4xl font-extrabold">Sign up for our Newsletter</div>
+                <div class="w-full text-center">
 
-        <div class="text-base sm:text-lg">Be the first to know about releases and industry news and insights.</div>
+                    <div class="mb-4 text-white text-3xl md:text-4xl font-extrabold">Sign up for our Newsletter</div>
 
-      </div>
+                    <div class="text-base sm:text-lg">Be the first to know about releases and industry news and
+                        insights.</div>
 
-      <div class="w-full">
+                </div>
 
-        <div class="flex flex-col justify-center sm:flex-row gap-3 w-full">
+                <div class="w-full">
 
-          <input type="text" placeholder="Enter your email" class="sm:w-2/4 sm:max-w-[400px] h-12 p-3 text-gray-900 border border-solid border-gray-300 rounded-lg shadow">
+                    <div class="flex flex-col justify-center sm:flex-row gap-3 w-full">
 
-          <button type="submit" class="sm:w-1/4 sm:max-w-[180px] h-12 text-white bg-gradient-to-r from-blue-500 to-blue-900 rounded-lg shadow transition-all duration-300 ease-in-out">Subscribe</button>
+                        <input type="text" placeholder="Enter your email"
+                            class="sm:w-2/4 sm:max-w-[400px] h-12 p-3 text-gray-900 border border-solid border-gray-300 rounded-lg shadow">
+
+                        <button type="submit"
+                            class="sm:w-1/4 sm:max-w-[180px] h-12 text-white bg-gradient-to-r from-blue-500 to-blue-900 rounded-lg shadow transition-all duration-300 ease-in-out">Subscribe</button>
+
+                    </div>
+
+                    <div class="mt-3 text-sm text-center">We care about your data in our <u
+                            class="cursor-pointer transition-all duration-300 ease-in-out hover:text-gray-50">privacy
+                            policy</u>.</div>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="mt-3 text-sm text-center">We care about your data in our <u class="cursor-pointer transition-all duration-300 ease-in-out hover:text-gray-50">privacy policy</u>.</div>
 
-      </div>
+        <section class="px-2 lg:px-10 " style="font-family: 'Inter', sans-serif;">
+            
+
+            <div class="textm flex flex-col md:flex-row justify-between items-center gap-3">
+    <div class="testy w-full md:w-1/2 mt-0 md:-mt-6 lg:mt-0">
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 p-6 rounded-lg">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="4107d842-d4ba-4efb-827a-19a00b9f55dc">
+
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+             <h2 class="text-blue-600 text-2xl">Get in touch</h2>
+            <h1 class="text-3xl font-semibold">Let’s Chat 👋, Consultation Is Free!</h1>
+            <p class="text-l text-gray-500 mb-7">Have questions or feedback? We're here to help. Send us a message, and we'll respond within 2 hours</p>
+
+            <div>
+                <label for="name" class="block text-l font-medium text-gray-700">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="email" class="block text-l font-medium text-gray-700">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="message" class="block text-l font-medium text-gray-700">Message</label>
+                <textarea name="message" id="message" placeholder="Message" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+            </div>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+                <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4">Submit</button>
+            </div>
+
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+        </form>
 
     </div>
+    <img src="assets/fa1267_8d5e4df280eb42f496d1c6544a8eee8b~mv2.gif" id="img" alt="" class="hidden md:inline-block w-full md:w-1/2 lg:w-3/6 mr-0 md:mr-4 lg:mr-16 ml-0 md:ml-5">
 
-  </div>
+    <style>
+        #img{
+            margin-top: 60px;
+        }
+    </style>
+</div>
+
+
+        </section>
 
 
     </main>
