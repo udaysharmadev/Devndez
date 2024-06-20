@@ -24,7 +24,7 @@
         <nav class="flex flex-row justify-between lg:justify-between lg:px-10 px-6 py-3 items-center"
             style="font-family: 'Inter', sans-serif;">
             <div class="logo">
-                <img src="logo.png" alt="Logo" width="130px">
+                <a href="/index.html"><img id="logo" src="logo.png" alt="Logo" width="130px"></a>
             </div>
             <ul class="flex-row justify-between gap-8 font-semibold text-lg ml-10 hidden lg:flex">
                 <li><a href="/index.html">Home</a></li>
@@ -33,14 +33,222 @@
                 <li><a href="/team.html">Team</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
-            <a href="#" class="hidden lg:flex">
-                <button class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
-                    <h1 class="text-white">Contact Us</h1>
-                    <i class="ri-arrow-right-up-line bg-white rounded-full px-1"></i>
-                </button>
-            </a>
 
-            <div class="lg:hidden">
+            <div class="rs flex flex-row  items-center justify-around">
+
+
+                <style>
+                    /* a clone from joshwcomeau.com 
+ * but this version runs on pure CSS
+ */
+
+                    .themeToggle {
+                        color: #bbb;
+                        width: 2em;
+                    }
+
+                    .st-sunMoonThemeToggleBtn {
+                        position: relative;
+                        cursor: pointer;
+                        margin-right: 8px;
+                    }
+
+                    .st-sunMoonThemeToggleBtn .themeToggleInput {
+                        opacity: 0;
+                        width: 100%;
+                        aspect-ratio: 1;
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg {
+                        position: absolute;
+                        left: -5;
+                        width: 100%;
+                        height: 100%;
+                        transition: transform 0.4s ease;
+                        transform: rotate(40deg);
+                        top: 0;
+
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg .sunMoon {
+                        transform-origin: center center;
+                        transition: inherit;
+                        transform: scale(1);
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg .sunRay {
+                        transform-origin: center center;
+                        transform: scale(0);
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg mask>circle {
+                        transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+                        transform: translate(0px, 0px);
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg .sunRay2 {
+                        animation-delay: 0.05s !important;
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg .sunRay3 {
+                        animation-delay: 0.1s !important;
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg .sunRay4 {
+                        animation-delay: 0.17s !important;
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                        animation-delay: 0.25s !important;
+                    }
+
+                    .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                        animation-delay: 0.29s !important;
+                    }
+
+                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
+                        transform: rotate(90deg);
+                    }
+
+                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
+                        transform: translate(16px, -3px);
+                    }
+
+                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
+                        transform: scale(0.55);
+                    }
+
+                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
+                        animation: showRay1832 0.4s ease 0s 1 forwards;
+                    }
+
+                    @keyframes showRay1832 {
+                        0% {
+                            transform: scale(0);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+                </style>
+
+                <a href="#" class="hidden lg:flex">
+                    <button
+                        class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
+                        <h1 class="text-white">Contact Us</h1>
+                        <i class="ri-arrow-right-up-line bg-white rounded-full px-1"></i>
+                    </button>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex flex-row items-center">
+                <label for="themeToggle"
+                    class="themeToggle st-sunMoonThemeToggleBtn text-sm md:text-l lg:text-lg right-1" type="checkbox">
+                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                        <mask id="moon-mask">
+                            <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                            <circle cx="11" cy="3" r="8" fill="black"></circle>
+                        </mask>
+                        <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                        <g>
+                            <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                            <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                            <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                            <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                            <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                            <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                        </g>
+                    </svg>
+                </label>
+
+                <style>
+                    body {
+                        transition: background-color 0.3s, color 0.3s;
+                    }
+
+                    body.light-theme {
+                        --logo-color: black;
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+
+                    body.dark-theme {
+                        --logo-color: white;
+                        background-color: #000000;
+                        color: #ffffff;
+                    }
+
+                    #logo {
+                        mix-blend-mode: difference;
+                        filter: invert(1);
+                        transition: filter 0.3s;
+                    }
+
+                    body.light-theme #logo {
+                        mix-blend-mode: unset;
+                        filter: none;
+                    }
+
+                    body.dark-theme #logo {
+                        mix-blend-mode: difference;
+                        filter: invert(1);
+                    }
+
+                    main i {
+                        color: #000;
+                    }
+
+                    .photu h1 {
+                        color: #000;
+                    }
+
+                    #ser {
+                        color: white;
+                    }
+
+                    #team {
+                        color: #858585;
+                    }
+
+                    #mobile-menu a,
+                    #mobile-menu i {
+                        color: black;
+                    }
+
+                    .services h3 {
+                        color: black;
+                    }
+                </style>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                        const themeToggleInput = document.getElementById('themeToggle');
+                        const currentTheme = localStorage.getItem('theme') || 'light';
+                        document.body.classList.add(currentTheme + '-theme');
+                        if (currentTheme === 'dark') {
+                            themeToggleInput.checked = true;
+                        }
+
+                        themeToggleInput.addEventListener('change', () => {
+                            if (themeToggleInput.checked) {
+                                document.body.classList.remove('light-theme');
+                                document.body.classList.add('dark-theme');
+                                localStorage.setItem('theme', 'dark');
+                            } else {
+                                document.body.classList.remove('dark-theme');
+                                document.body.classList.add('light-theme');
+                                localStorage.setItem('theme', 'light');
+                            }
+                        });
+                    });
+
+
+                </script>
+
+
+
                 <button id="menu-btn">
                     <i class="ri-menu-5-line text-2xl"></i>
                 </button>
@@ -81,115 +289,210 @@
     </script>
 
 
-<footer class="footer-section bg-gray-900 relative" style="font-family: 'Inter', sans-serif;">
-    <div class="container px-8 py-3">
-        <div class="footer-cta pt-5 pb-5 border-b border-gray-800">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="single-cta flex items-center">
-                    <i class="fas fa-map-marker-alt text-orange-500 text-2xl mr-2"></i>
-                    <div class="cta-text">
-                        <h4 class="text-white text-lg font-semibold">Find us</h4>
-                        <span class="text-gray-500">9/501 West Kanti Nagar ,Shahdra ,Delhi - 51</span>
-                    </div>
-                </div>
-                <div class="single-cta flex items-center ml-0 md:ml-6 lg:ml-12">
-                    <i class="fas fa-phone text-orange-500 text-2xl mr-2"></i>
-                    <div class="cta-text">
-                        <h4 class="text-white text-lg font-semibold">Call us</h4>
-                        <span class="text-gray-500">+91 8287758779 , +91 8882758514</span>
-                    </div>
-                </div>
-                <div class="single-cta flex items-center">
-                    <i class="far fa-envelope-open text-orange-500 text-2xl mr-2"></i>
-                    <div class="cta-text">
-                        <h4 class="text-white text-lg font-semibold">Mail us</h4>
-                        <span class="text-gray-500">devndezagency@gmail.com</span>
-                    </div>
-                </div>
-            </div>
+    <main>
+
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#4B5563" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#374151" />o
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#1F2937" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#111827" />
+                </g>
+            </svg>
         </div>
-        <div class="footer-content pt-5 pb-5 px-2">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="footer-widget mb-8 md:mb-0">
-                    <div class="footer-logo -mt-0 md:-mt-8 lg:-mt-16 ">
-                        <a href="#"><img src="logo.png" class="img-fluid" alt="logo"
-                                style="filter: invert(1);"></a>
+        <!--Waves end-->
+
+
+        <style>
+            .waves {
+                position: relative;
+                width: 100%;
+                height: 15vh;
+                margin-bottom: -7px;
+                /*Fix for safari gap*/
+                min-height: 100px;
+                max-height: 150px;
+            }
+
+            .content {
+                position: relative;
+                height: 20vh;
+                text-align: center;
+                background-color: gray;
+            }
+
+            /* Animation */
+
+            .parallax>use {
+                animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            }
+
+            .parallax>use:nth-child(1) {
+                animation-delay: -2s;
+                animation-duration: 7s;
+            }
+
+            .parallax>use:nth-child(2) {
+                animation-delay: -3s;
+                animation-duration: 10s;
+            }
+
+            .parallax>use:nth-child(3) {
+                animation-delay: -4s;
+                animation-duration: 13s;
+            }
+
+            .parallax>use:nth-child(4) {
+                animation-delay: -5s;
+                animation-duration: 20s;
+            }
+
+            @keyframes move-forever {
+                0% {
+                    transform: translate3d(-90px, 0, 0);
+                }
+
+                100% {
+                    transform: translate3d(85px, 0, 0);
+                }
+            }
+
+            /*Shrinking for mobile*/
+            @media (max-width: 768px) {
+                .waves {
+                    height: 40px;
+                    min-height: 40px;
+                }
+
+                .content {
+                    height: 30vh;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        </style>
+        </div>
+    </main>
+
+
+    <footer class="footer-section bg-gray-900 relative" style="font-family: 'Inter', sans-serif;">
+        <div class="container px-8 py-3">
+            <div class="footer-cta pt-5 pb-5 border-b border-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="single-cta flex items-center">
+                        <i class="fas fa-map-marker-alt text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <h4 class="text-white text-lg font-semibold">Find us</h4>
+                            <span class="text-gray-500">9/501 West Kanti Nagar ,Shahdra ,Delhi - 51</span>
+                        </div>
                     </div>
-                    <div class="footer-text -mt-0 md:-mt-7 lg:-mt-10  mb-4">
-                        <p class="text-gray-500">Crafting websites and graphic designs for businesses and startups.
-                            Proudly served 117+ satisfied clients. Follow for our exciting startup journey.</p>
+                    <div class="single-cta flex items-center ml-0 md:ml-6 lg:ml-12">
+                        <i class="fas fa-phone text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <h4 class="text-white text-lg font-semibold">Call us</h4>
+                            <span class="text-gray-500">+91 8287758779 , +91 8882758514</span>
+                        </div>
                     </div>
-                    <div class="footer-social-icon flex flex-col">
-                        <span class="text-white text-lg ">Follow us</span>
-                        <div class="icons text-3xl mt-1">
-                            <a href="#" class="text-white hover:text-blue-600"><i class="ri-facebook-circle-fill"></i></a>
-                            <a href="#" class="text-white hover:text-blue-600"><i class="ri-linkedin-box-fill"></i></a>
-                            <a href="#" class="text-white hover:text-blue-600"><i class="ri-instagram-fill"></i></a>
+                    <div class="single-cta flex items-center">
+                        <i class="far fa-envelope-open text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <h4 class="text-white text-lg font-semibold">Mail us</h4>
+                            <span class="text-gray-500">info@devndez.com</span>
                         </div>
                     </div>
                 </div>
-                <div class="footer-widget ml-0 md:ml-8 lg:ml-14 -mt-5 md:-mt-0 lg:mt-0">
-                    <div class="footer-widget-heading">
-                        <h3 class="text-white text-lg font-semibold mb-5">Useful Links</h3>
+            </div>
+            <div class="footer-content pt-5 pb-5 px-2">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="footer-widget mb-8 md:mb-0">
+                        <div class="footer-logo -mt-0 md:-mt-8 lg:-mt-16 ">
+                            <a href="#"><img src="logo.png" class="img-fluid" alt="logo" style="filter: invert(1);"></a>
+                        </div>
+                        <div class="footer-text -mt-0 md:-mt-7 lg:-mt-10  mb-4">
+                            <p class="text-gray-500">Crafting websites and graphic designs for businesses and startups.
+                                Proudly served 117+ satisfied clients. Follow for our exciting startup journey.</p>
+                        </div>
+                        <div class="footer-social-icon flex flex-col">
+                            <span class="text-white text-lg ">Follow us</span>
+                            <div class="icons text-3xl mt-1">
+                                <a href="#" class="text-white hover:text-blue-600"><i
+                                        class="ri-facebook-circle-fill"></i></a>
+                                <a href="#" class="text-white hover:text-blue-600"><i
+                                        class="ri-linkedin-box-fill"></i></a>
+                                <a href="#" class="text-white hover:text-blue-600"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dabbe flex flex-row gap-20 md:gap-8 lg:gap-20">
-                        <ul class="">
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">about</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">services</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">portfolio</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">About us</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Our Services</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Expert Team</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact us</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Latest News</a></li>
-                        </ul>
-                    </div>
+                    <div class="footer-widget ml-0 md:ml-8 lg:ml-14 -mt-5 md:-mt-0 lg:mt-0">
+                        <div class="footer-widget-heading">
+                            <h3 class="text-white text-lg font-semibold mb-5">Useful Links</h3>
+                        </div>
+                        <div class="dabbe flex flex-row gap-20 md:gap-8 lg:gap-20">
+                            <ul class="">
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">about</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">services</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">portfolio</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">About us</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Our Services</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Expert Team</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact us</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Latest News</a></li>
+                            </ul>
+                        </div>
 
-                </div>
-                <div class="footer-widget ml-0 md:ml-3">
-                    <div class="footer-widget-heading">
-                        <h3 class="text-white text-lg font-semibold">Subscribe</h3>
                     </div>
-                    <div class="footer-text mb-5">
-                        <p class="text-gray-500">Don’t miss to subscribe to our new feeds, kindly fill the form
-                            below.</p>
-                    </div>
-                    <div class="subscribe-form flex flex-row">
-                        <input type="text" placeholder="Email Address" class="w-full bg-gray-800 text-white p-3">
-                        <button class="bg-blue-600 text-white p-3"><i class="ri-send-plane-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="copyright-area bg-gray-800 px-8 py-3">
-        <div class="container">
-            <div class="row flex flex-row justify-between">
-                <div class="col-lg-6 text-center lg:text-left">
-                    <div class="copyright-text">
-                        <p class="text-gray-500">Copyright &copy; 2024, All Right Reserved <a
-                                href="Devndez.xyz" class="text-blue-600">Dev N Dez</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 hidden lg:block text-right">
-                    <div class="footer-menu">
-                        <ul class="flex flex-row gap-3">
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Terms</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Privacy</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Policy</a></li>
-                            <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
-                        </ul>
+                    <div class="footer-widget ml-0 md:ml-3">
+                        <div class="footer-widget-heading">
+                            <h3 class="text-white text-lg font-semibold">Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-5">
+                            <p class="text-gray-500">Don’t miss to subscribe to our new feeds, kindly fill the form
+                                below.</p>
+                        </div>
+                        <div class="subscribe-form flex flex-row">
+                            <input type="text" placeholder="Email Address" class="w-full bg-gray-800 text-white p-3">
+                            <button class="bg-blue-600 text-white p-3"><i class="ri-send-plane-fill"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+        <div class="copyright-area bg-gray-800 px-8 py-3">
+            <div class="container">
+                <div class="row flex flex-row justify-between">
+                    <div class="col-lg-6 text-center lg:text-left">
+                        <div class="copyright-text">
+                            <p class="text-gray-500">Copyright &copy; 2024, All Right Reserved <a href="Devndez.xyz"
+                                    class="text-blue-600">Dev N Dez</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hidden lg:block text-right">
+                        <div class="footer-menu">
+                            <ul class="flex flex-row gap-3">
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Terms</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Privacy</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Policy</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
