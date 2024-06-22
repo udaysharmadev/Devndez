@@ -15,7 +15,26 @@
         .custom-gradient {
             background: linear-gradient(135deg, #000000 10%, #0000ff 100%, #ff0000 101%, #800080 100%);
         }
+        
+li {
+    display: inline-block;
+}
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Highlight Current Page Link */
+a.active {
+    color: #007bff;
+}
     </style>
+
+    
 
 </head>
 
@@ -30,7 +49,6 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/services.html">Service</a></li>
-                <li><a href="/team.html">Team</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
 
@@ -133,7 +151,7 @@
                     }
                 </style>
 
-                <a href="#" class="hidden lg:flex">
+                <a href="/contact.html" class="hidden lg:flex">
                     <button
                         class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
                         <h1 class="text-white">Contact Us</h1>
@@ -263,7 +281,6 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/services.html">Service</a></li>
-                <li><a href="/team.html">Team</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>

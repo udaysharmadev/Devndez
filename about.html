@@ -15,7 +15,26 @@
         .custom-gradient {
             background: linear-gradient(135deg, #000000 10%, #0000ff 100%, #ff0000 101%, #800080 100%);
         }
+        
+li {
+    display: inline-block;
+}
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Highlight Current Page Link */
+a.active {
+    color: #007bff;
+}
     </style>
+
+    
 
 </head>
 
@@ -30,7 +49,6 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/services.html">Service</a></li>
-                <li><a href="/team.html">Team</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
 
@@ -133,7 +151,7 @@
                     }
                 </style>
 
-                <a href="#" class="hidden lg:flex">
+                <a href="/contact.html" class="hidden lg:flex">
                     <button
                         class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
                         <h1 class="text-white">Contact Us</h1>
@@ -263,7 +281,6 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/services.html">Service</a></li>
-                <li><a href="/team.html">Team</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
@@ -294,16 +311,16 @@
 
         
         <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-12 md:py-12 md:px-6 py-9 px-7" style="font-family: 'Archivo', sans-serif;">
-            <p class="font-normal text-sm leading-3 text-indigo-700 dark:text-indigo-500 hover:text-indigo-800 cursor-pointer pb-2">About</p>
+            <p class="font-normal text-md leading-3 text-gray-500 dark:text-indigo-500 hover:text-indigo-800 cursor-pointer pb-2">About</p>
             <div class="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
                 <div class="w-full lg:w-6/12">
-                    <h2 class="w-full font-bold lg:text-4xl text-3xl lg:leading-10 dark:text-white leading-9">We are here to make great design accessible and delightfull for everyone</h2>
-                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire,</p>
+                    <h2 class="w-full font-bold lg:text-4xl text-3xl lg:leading-10 dark:text-white leading-9">Empowering Your Online Presence Discover the <span class="text-blue-700">DevnDez</span> Difference Today!</h2>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6 ml-0 lg:ml-1"> DevnDez is more than a digital agency; we're your partner in online success. With a commitment to excellence and a passion for innovation, we offer a full suite of services designed to elevate your brand and expand your reach. Our team of experts brings a wealth of experience and a fresh perspective to every project, ensuring that your vision is not only realized but exceeded. From stunning websites to engaging content, we have the tools and the talent to take your online presence to new heights. Whether you're a small startup or an established business, DevnDez is here to help you thrive in the digital world. Join us on this exciting journey and let's make your online dreams a reality.</p>
                 </div>
                 <div class="w-full lg:w-6/12">
-                    <img class="lg:block hidden w-full" src="https://i.ibb.co/RjNH7QB/Rectangle-122-1.png" alt="people discussing on board" />
-                    <img class="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png" alt="people discussing on board" />
-                    <img class="sm:hidden block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png" alt="people discussing on board" />
+                    <img class="lg:block hidden w-full rounded-lg" src="abs.png" alt="people discussing on board" />
+                    <img class="lg:hidden sm:block hidden w-full rounded-lg" src="abs.png" alt="people discussing on board" />
+                    <img class="sm:hidden block w-full rounded-lg" src="abs.png" alt="people discussing on board" />
                 </div>
             </div>
     
@@ -317,81 +334,716 @@
     
                    <img class="z-20 sm:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/about-us-3-svg3.svg" alt="users" />
                 </div>
-                <hr class="z-10 absolute top-2/4 w-full bg-gray-200" />
+                <hr class="z-0 absolute top-2/4 w-full bg-gray-200" />
             </div>
             <div class="grid sm:grid-cols-3 grid-cols-2 sm:gap-8 gap-4">
                 <div>
                     <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white mt-6">Founded</p>
-                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6"> Founded by Uday Sharma, who leads DevnDez with vision and innovation, ensuring exceptional digital solutions.</p>
                 </div>
                 <div>
-                    <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white mt-6">50M montly enrichments</p>
-                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white mt-6">Crafted 100+ Websites</p>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">DevnDez has successfully crafted over 100+ websites, delivering exceptional digital solutions for diverse clients worldwide.</p>
                 </div>
                 <div class="sm:block hidden">
-                    <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white mt-6">400k User</p>
-                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white mt-6">259+ Clients</p>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">DevnDez has proudly served over 259 clients, delivering top-notch digital solutions tailored to their unique needs and driving their online success.</p>
                 </div>
             </div>
             <div class="sm:hidden block relative mt-8">
                 <div class="grid sm:grid-cols-3 grid-cols-2 sm:gap-8 gap-4">
-                   <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/about-us-3-svg3.svg" alt="user" />
+                   <img class="z-20" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/about-us-3-svg3.svg" alt="user" />
                 </div>
                 <hr class="z-10 absolute top-2/4 w-full bg-gray-200" />
             </div>
             <div class="sm:hidden grid sm:grid-cols-3 grid-cols-2 sm:gap-8 gap-4">
                 <div>
-                    <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white mt-6">400k User</p>
-                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white mt-6">259+ Clients</p>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">DevnDez has proudly served over 259 clients, delivering top-notch digital solutions tailored to their unique needs and driving their online success.</p>
                 </div>
             </div>
     
             <div class="flex lg:flex-row flex-col md:gap-14 gap-16 justify-between lg:mt-20 mt-16">
                 <div class="w-full lg:w-6/12">
-                    <h2 class="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white">Our Mission</h2>
-                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6 w-full lg:w-10/12 xl:w-9/12">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from</p>
-                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 w-full lg:w-10/12 xl:w-9/12 mt-10">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from</p>
+                    <h2 class="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white">Our <span class="text-blue-700">Mission</span></h2>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6 w-full lg:w-10/12 xl:w-9/12">At DevnDez, our mission is to empower businesses and startups with innovative digital solutions that drive growth and success. We believe in the transformative power of technology and design, and we are committed to helping our clients harness this power to achieve their goals.
+
+                        Our team of experts is dedicated to delivering exceptional results, combining creativity, technical expertise, and strategic thinking to create impactful online experiences. We strive to understand our clients' unique needs and objectives, working closely with them to develop tailored solutions that exceed expectations.</p>
+                    <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 w-full lg:w-10/12 xl:w-9/12 mt-10">With a focus on quality, innovation, and customer satisfaction, we aim to be a trusted partner for businesses looking to thrive in the digital world. We are driven by a passion for excellence and a commitment to helping our clients succeed.</p>
                 </div>
                 <div class="w-full lg:w-6/12">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-12 gap-10">
                         <!-- Team Card -->
                         <div class="flex p-4 shadow-md">
                             <div class="mr-6">
-                               <img class="mr-6"  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/about-us-3-svg4.svg" alt="team card" />
+                                <i class="ri-team-line text-3xl"></i>
                             </div>
                             <div class="">
-                                <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white">Team</p>
-                                <p class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white">Best Team</p>
+                                <p class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200">Our diverse, skilled team is dedicated to crafting exceptional digital solutions for every client.</p>
                             </div>
                         </div>
     
                         <!-- Board Card -->
                         <div class="flex p-4 shadow-md">
                             <div class="mr-6">
-                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/about-us-3-svg5.svg" alt="board card" />
+                                <i class="ri-building-2-line text-3xl"></i>
                             </div>
                             <div class="">
-                                <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white">Board</p>
-                                <p class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white">Building Startups</p>
+                                <p class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200">Empowering startups through innovative digital solutions that drive growth, engagement, and success in the market.</p>
                             </div>
                         </div>
     
                         <!-- Press Card -->
                         <div class="flex p-4 shadow-md">
                             <div class="mr-6">
-                               <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/about-us-3-svg6.svg" alt="press card" />
+                                <i class="ri-mail-line text-3xl"></i>
                             </div>
                             <div class="">
-                                <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white">Press</p>
-                                <p class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white">24/7 Customer Support</p>
+                                <p class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200">Our customer support is top-notch, ensuring that every client receives personalized, attentive service.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
 
+
+
+
+        <div class=" py-12 px-7 sm:px-6 lg:px-12" style="font-family: 'Archivo', sans-serif;">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Our Partners
+                    </h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                        Collaborating with industry leaders and innovators to enhance our services.
+                    </p>
+                </div>
+                <div class="mt-12 max-w-4xl mx-auto grid gap-12 lg:grid-cols-3 lg:max-w-none text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="rounded-full border shadow-sm bg-white text-white h-16 w-16 flex items-center justify-center">
+                            <img src="logo1.png" alt="">
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mt-4">BESH</h3>
+                        <p class="mt-2 text-base text-gray-500">
+                            Fashion forward, eco-conscious clothing brand blending style with sustainable practices for everyday wear.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="rounded-full border shadow-sm bg-white text-white h-16 w-16 flex items-center justify-center">
+                            <img src="logo2.png" alt="">
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mt-4">KANTHASTH</h3>
+                        <p class="mt-2 text-base text-gray-500">
+                            Kanthasth Music Productions: Crafting soulful melodies and rhythms to captivate hearts and inspire the world.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="rounded-full border shadow-sm bg-white text-white h-16 w-16 flex items-center justify-center">
+                            <img src="logo4.png" alt="">
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mt-4">FIXIFIZE</h3>
+                        <p class="mt-2 text-base text-gray-500">
+                            Innovating digital solutions, crafting brand identities, and delivering captivating content for businesses worldwide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <section class="flex items-center flex-col md:flex-col justify-center mt-10 px-6 lg:px-10 py-3 "
+            style="font-family: 'Archivo', sans-serif;" id="testi>
+            <div class="text-center max-w-2xl">
+                <h1 class="text-3xl font-bold mb-2 md:mb-4">Hear From Our <span class="text-blue-600">Clients</span>
+                </h1>
+                <p class="text-l mb-1 text-gray-400">Discover what our satisfied clients have to say about their
+                    experiences with us.</p>
+            </div>
+        </section>
+
+
+
+        <div class="testimonial-section left-to-right">
+            <div class="testimonial-wrapper text-xs">
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional website design
+                        services! Their team is highly skilled, responsive, and delivers top-notch results. The websites
+                        they create are visually stunning, user-friendly, and optimized for performance. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test1.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Somya Shrimali</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Excellent client service and
+                        impressive nature-themed designs! The team is attentive, responsive, and truly captures the
+                        beauty of nature in their work. Their dedication to client satisfaction is commendable. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Anvii</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Impressive graphic design work!
+                        The team is creative, professional, and delivers stunning visuals. Their designs effectively
+                        captured our brand's essence. Highly recommend for top-quality graphic design services!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Suryabhan Singh</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Outstanding service! They created
+                        a beautiful graphics tailored to our needs. Professional, timely, and attentive to detail.
+                        Highly impressed with their creativity and technical expertise. Definitely recommend them!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test4.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kapil Dave</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional graphic design
+                        services! The team is incredibly talented and responsive, producing visually striking and
+                        impactful designs. Their creativity and attention to detail exceeded our expectations. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test5.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Manav Tandon</h1>
+                    </div>
+                </div>
+
+                <!-- Duplicated testimonials for continuous loop -->
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez transformed my startup’s
+                        online presence with their exceptional web development skills. The team was responsive,
+                        creative, and professional. Highly recommend their services to any growing business!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest1.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Priyanshu Nagar</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Fantastic experience working with
+                        this team! Their nature-inspired designs are breathtaking, and they excel in client
+                        communication. They are responsive, attentive, and committed to delivering exceptional results.
+                    </p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Yash Rajwaniya</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez’s creativity and execution
+                        are unparalleled. They brought our vision to life flawlessly with their web development
+                        services. The team’s innovative approach and dedication are superb. Highly satisfied!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Varun Singh</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Top-notch development from
+                        DevnDez! Their expertise significantly boosted our website’s performance and aesthetics. The
+                        team’s technical proficiency and attention to detail are truly impressive. Outstanding
+                        experience!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest4.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kshitiz Kaushik</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Efficient, reliable, and
+                        professional web development services by DevnDez. They made our website shine with their expert
+                        skills. The team's commitment to quality is evident in every detail. Best service around!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest5.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Santosh Kumar</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional website design
+                        services! Their team is highly skilled, responsive, and delivers top-notch results. The websites
+                        they create are visually stunning, user-friendly, and optimized for performance. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test1.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Somya Shrimali</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Excellent client service and
+                        impressive nature-themed designs! The team is attentive, responsive, and truly captures the
+                        beauty of nature in their work. Their dedication to client satisfaction is commendable. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Anvii</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Impressive graphic design work!
+                        The team is creative, professional, and delivers stunning visuals. Their designs effectively
+                        captured our brand's essence. Highly recommend for top-quality graphic design services!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Suryabhan Singh</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Outstanding service! They created
+                        a beautiful graphics tailored to our needs. Professional, timely, and attentive to detail.
+                        Highly impressed with their creativity and technical expertise. Definitely recommend them!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test4.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kapil Dave</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional graphic design
+                        services! The team is incredibly talented and responsive, producing visually striking and
+                        impactful designs. Their creativity and attention to detail exceeded our expectations. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test5.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Manav Tandon</h1>
+                    </div>
+                </div>
+
+                <!-- Duplicated testimonials for continuous loop -->
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez transformed my startup’s
+                        online presence with their exceptional web development skills. The team was responsive,
+                        creative, and professional. Highly recommend their services to any growing business!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest1.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Priyanshu Nagar</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Fantastic experience working with
+                        this team! Their nature-inspired designs are breathtaking, and they excel in client
+                        communication. They are responsive, attentive, and committed to delivering exceptional results.
+                    </p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Yash Rajwaniya</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez’s creativity and execution
+                        are unparalleled. They brought our vision to life flawlessly with their web development
+                        services. The team’s innovative approach and dedication are superb. Highly satisfied!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Varun Singh</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Top-notch development from
+                        DevnDez! Their expertise significantly boosted our website’s performance and aesthetics. The
+                        team’s technical proficiency and attention to detail are truly impressive. Outstanding
+                        experience!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest4.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kshitiz Kaushik</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Efficient, reliable, and
+                        professional web development services by DevnDez. They made our website shine with their expert
+                        skills. The team's commitment to quality is evident in every detail. Best service around!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest5.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Santosh Kumar</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="testimonial-section right-to-left mb-10">
+            <div class="testimonial-wrapper">
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Outstanding service! They created
+                        a beautiful graphics tailored to our needs. Professional, timely, and attentive to detail.
+                        Highly impressed with their creativity and technical expertise. Definitely recommend them!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test4.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kapil Dave</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Impressive graphic design work!
+                        The team is creative, professional, and delivers stunning visuals. Their designs effectively
+                        captured our brand's essence. Highly recommend for top-quality graphic design services!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Suryabhan Singh</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional website design
+                        services! Their team is highly skilled, responsive, and delivers top-notch results. The websites
+                        they create are visually stunning, user-friendly, and optimized for performance. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test1.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Somya Shrimali</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Top-notch development from
+                        DevnDez! Their expertise significantly boosted our website’s performance and aesthetics. The
+                        team’s technical proficiency and attention to detail are truly impressive. Outstanding
+                        experience!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest4.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kshitiz Kaushik</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Efficient, reliable, and
+                        professional web development services by DevnDez. They made our website shine with their expert
+                        skills. The team's commitment to quality is evident in every detail. Best service around!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest5.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Santosh Kumar</h1>
+                    </div>
+                </div>
+
+
+
+                <!-- Duplicated testimonials for continuous loop -->
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez transformed my startup’s
+                        online presence with their exceptional web development skills. The team was responsive,
+                        creative, and professional. Highly recommend their services to any growing business!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest1.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Priyanshu Nagar</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional graphic design
+                        services! The team is incredibly talented and responsive, producing visually striking and
+                        impactful designs. Their creativity and attention to detail exceeded our expectations. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test5.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Manav Tandon</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Fantastic experience working with
+                        this team! Their nature-inspired designs are breathtaking, and they excel in client
+                        communication. They are responsive, attentive, and committed to delivering exceptional results.
+                    </p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Yash Rajwaniya</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Excellent client service and
+                        impressive nature-themed designs! The team is attentive, responsive, and truly captures the
+                        beauty of nature in their work. Their dedication to client satisfaction is commendable. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Anvii</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez’s creativity and execution
+                        are unparalleled. They brought our vision to life flawlessly with their web development
+                        services. The team’s innovative approach and dedication are superb. Highly satisfied!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Varun Singh</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Outstanding service! They created
+                        a beautiful graphics tailored to our needs. Professional, timely, and attentive to detail.
+                        Highly impressed with their creativity and technical expertise. Definitely recommend them!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test4.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kapil Dave</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Impressive graphic design work!
+                        The team is creative, professional, and delivers stunning visuals. Their designs effectively
+                        captured our brand's essence. Highly recommend for top-quality graphic design services!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Suryabhan Singh</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional website design
+                        services! Their team is highly skilled, responsive, and delivers top-notch results. The websites
+                        they create are visually stunning, user-friendly, and optimized for performance. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test1.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Somya Shrimali</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Top-notch development from
+                        DevnDez! Their expertise significantly boosted our website’s performance and aesthetics. The
+                        team’s technical proficiency and attention to detail are truly impressive. Outstanding
+                        experience!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest4.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Kshitiz Kaushik</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Efficient, reliable, and
+                        professional web development services by DevnDez. They made our website shine with their expert
+                        skills. The team's commitment to quality is evident in every detail. Best service around!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest5.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Santosh Kumar</h1>
+                    </div>
+                </div>
+
+
+
+                <!-- Duplicated testimonials for continuous loop -->
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez transformed my startup’s
+                        online presence with their exceptional web development skills. The team was responsive,
+                        creative, and professional. Highly recommend their services to any growing business!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest1.png" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Priyanshu Nagar</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Exceptional graphic design
+                        services! The team is incredibly talented and responsive, producing visually striking and
+                        impactful designs. Their creativity and attention to detail exceeded our expectations. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test5.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Manav Tandon</h1>
+                    </div>
+                </div>
+
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Fantastic experience working with
+                        this team! Their nature-inspired designs are breathtaking, and they excel in client
+                        communication. They are responsive, attentive, and committed to delivering exceptional results.
+                    </p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Yash Rajwaniya</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">Excellent client service and
+                        impressive nature-themed designs! The team is attentive, responsive, and truly captures the
+                        beauty of nature in their work. Their dedication to client satisfaction is commendable. Highly
+                        recommended!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="test2.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Anvii</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto flex flex-col items-start">
+                    <p class="text-left text-gray-800 text-xs mb-2 whitespace-normal">DevnDez’s creativity and execution
+                        are unparalleled. They brought our vision to life flawlessly with their web development
+                        services. The team’s innovative approach and dedication are superb. Highly satisfied!</p>
+                    <div class="flex items-center mt-3 mb-4">
+                        <img src="wtest3.jpeg" class="h-8 w-8 rounded-full bg-gray-800 mr-2">
+                        <h1 class="text-gray-900 font-semibold">Varun Singh</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <style>
+            .testimonial-section {
+                overflow: hidden;
+                white-space: nowrap;
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            .testimonial-wrapper {
+                display: inline-block;
+                white-space: nowrap;
+            }
+
+            .testimonial-card {
+                display: inline-block;
+                width: 210px;
+                height: 200px;
+                margin: 0 10px;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                vertical-align: top;
+            }
+
+            .testimonial-card img {
+                object-fit: cover;
+            }
+
+            .testimonial-card h1 {
+                font-size: small;
+            }
+
+            .testimonial-section:hover .testimonial-wrapper {
+                animation-play-state: paused;
+            }
+
+            .testimonial-card:hover {
+                scale: 1.1;
+                transition: all 0.3s;
+            }
+
+            .left-to-right .testimonial-wrapper {
+                animation: scroll-left-to-right 60s linear infinite;
+            }
+
+            .right-to-left .testimonial-wrapper {
+                animation: scroll-right-to-left 60s linear infinite;
+            }
+
+            @keyframes scroll-left-to-right {
+                0% {
+                    transform: translateX(0%);
+                }
+
+                100% {
+                    transform: translateX(calc(-100% / 2));
+                }
+            }
+
+            @keyframes scroll-right-to-left {
+                0% {
+                    transform: translateX(calc(-100% / 2));
+                }
+
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+        </style>
+        
+        
         <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
