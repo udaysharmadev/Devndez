@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 
+    <link rel="shortcut icon" type="x-icon" href="12121(1).png">
+
     <meta name="description" content="Your go-to digital agency for website development, UI/UX design, logo creation, hosting, and domain management. We deliver tailored digital solutions for businesses and startups.">
     <meta name="keywords" content="Website Development, UI/UX Design, Logo Design, Digital Solutions, Hosting Services, Domain Management, Business Startups Support">
     <meta name="author" content="Uday Sharma, DevnDez, Sachin Verma">
@@ -46,10 +48,10 @@ a.active {
 
 <body class="relative">
     <header>
-        <nav class="flex flex-row justify-between lg:justify-between lg:px-10 px-6 py-3 items-center"
+        <nav class="flex flex-row justify-between lg:px-10 px-6 py-3 items-center"
             style="font-family: 'Inter', sans-serif;">
             <div class="logo">
-                <a href="/index.html"><img id="logo" src="logo.png" alt="Logo" width="130px"></a>
+                <a href="/index.html"><img id="logo" src="logo.png" alt="devndez" width="130px"></a>
             </div>
             <ul class="flex-row justify-between gap-8 font-semibold text-lg ml-10 hidden lg:flex">
                 <li><a href="/index.html">Home</a></li>
@@ -58,232 +60,259 @@ a.active {
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
 
-            <div class="rs flex flex-row  items-center justify-around">
+
+            <div class="sidewale flex flex-row items-center">
+                <div class="flex flex-row items-center">
+                    <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn text-sm md:text-l lg:text-lg"
+                        type="checkbox">
+                        <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                            <mask id="moon-mask">
+                                <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                                <circle cx="11" cy="3" r="8" fill="black"></circle>
+                            </mask>
+                            <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                            <g>
+                                <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                                <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                                <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                                <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                                <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                                <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                            </g>
+                        </svg>
+                    </label>
+
+                    <style>
+                        body {
+                            transition: background-color 0.3s, color 0.3s;
+                        }
+
+                        body.light-theme {
+                            --logo-color: black;
+                            background-color: #ffffff;
+                            color: #000000;
+                        }
+
+                        body.dark-theme {
+                            --logo-color: white;
+                            background-color: #000000;
+                            color: #ffffff;
+                        }
+
+                        #logo {
+                            mix-blend-mode: difference;
+                            filter: invert(1);
+                            transition: filter 0.3s;
+                        }
+
+                        body.light-theme #logo {
+                            mix-blend-mode: unset;
+                            filter: none;
+                        }
+
+                        body.dark-theme #logo {
+                            mix-blend-mode: difference;
+                            filter: invert(1);
+                        }
+
+                        body.dark-theme .services .bg-white {
+
+                            background-color: #111827;
+                        }
+
+                        body.dark-theme .services .bg-white h3 {
+
+                            color: white;
+                        }
+
+                        body.dark-theme .services .bg-white p {
+
+                            color: rgb(206, 206, 206);
+                        }
+
+                        body.dark-theme .bgaa {
+                            background-color: #111827;
+                        }
+
+                        body.dark-theme .bgaa p {
+                            color: rgb(206, 206, 206);
+                        }
+
+                        main i {
+                            color: #000;
+                        }
+
+                        .photu h1 {
+                            color: #000;
+                        }
+
+                        #ser {
+                            color: white;
+                        }
+
+                        #team {
+                            color: #858585;
+                        }
+
+                        #mobile-menu a,
+                        #mobile-menu i {
+                            color: black;
+                        }
+
+                        .services h3 {
+                            color: black;
+                        }
+                    </style>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', (event) => {
+                            const themeToggleInput = document.getElementById('themeToggle');
+                            const currentTheme = localStorage.getItem('theme') || 'light';
+                            document.body.classList.add(currentTheme + '-theme');
+                            if (currentTheme === 'dark') {
+                                themeToggleInput.checked = true;
+                            }
+
+                            themeToggleInput.addEventListener('change', () => {
+                                if (themeToggleInput.checked) {
+                                    document.body.classList.remove('light-theme');
+                                    document.body.classList.add('dark-theme');
+                                    localStorage.setItem('theme', 'dark');
+                                } else {
+                                    document.body.classList.remove('dark-theme');
+                                    document.body.classList.add('light-theme');
+                                    localStorage.setItem('theme', 'light');
+                                }
+                            });
+                        });
 
 
-                <style>
-                    /* a clone from joshwcomeau.com 
- * but this version runs on pure CSS
- */
+                    </script>
 
-                    .themeToggle {
-                        color: #bbb;
-                        width: 2em;
-                    }
 
-                    .st-sunMoonThemeToggleBtn {
-                        position: relative;
-                        cursor: pointer;
-                        margin-right: 8px;
-                    }
 
-                    .st-sunMoonThemeToggleBtn .themeToggleInput {
-                        opacity: 0;
-                        width: 100%;
-                        aspect-ratio: 1;
-                    }
+                    <button id="menu-btn" class="lg:hidden flex">
+                        <i class="ri-menu-5-line text-2xl"></i>
+                    </button>
+                </div>
 
-                    .st-sunMoonThemeToggleBtn svg {
-                        position: absolute;
-                        left: -5;
-                        width: 100%;
-                        height: 100%;
-                        transition: transform 0.4s ease;
-                        transform: rotate(40deg);
-                        top: 0;
+                <div class="rs lg:flex flex-row items-center justify-around hidden">
 
-                    }
 
-                    .st-sunMoonThemeToggleBtn svg .sunMoon {
-                        transform-origin: center center;
-                        transition: inherit;
-                        transform: scale(1);
-                    }
+                    <style>
+                        .themeToggle {
+                            color: #bbb;
+                            width: 2em;
+                        }
 
-                    .st-sunMoonThemeToggleBtn svg .sunRay {
-                        transform-origin: center center;
-                        transform: scale(0);
-                    }
+                        .st-sunMoonThemeToggleBtn {
+                            position: relative;
+                            cursor: pointer;
+                            margin-right: 8px;
+                        }
 
-                    .st-sunMoonThemeToggleBtn svg mask>circle {
-                        transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
-                        transform: translate(0px, 0px);
-                    }
+                        .st-sunMoonThemeToggleBtn .themeToggleInput {
+                            opacity: 0;
+                            width: 100%;
+                            aspect-ratio: 1;
+                        }
 
-                    .st-sunMoonThemeToggleBtn svg .sunRay2 {
-                        animation-delay: 0.05s !important;
-                    }
+                        .st-sunMoonThemeToggleBtn svg {
+                            position: absolute;
+                            left: -5;
+                            width: 100%;
+                            height: 100%;
+                            transition: transform 0.4s ease;
+                            transform: rotate(40deg);
+                            top: 0;
 
-                    .st-sunMoonThemeToggleBtn svg .sunRay3 {
-                        animation-delay: 0.1s !important;
-                    }
+                        }
 
-                    .st-sunMoonThemeToggleBtn svg .sunRay4 {
-                        animation-delay: 0.17s !important;
-                    }
+                        .st-sunMoonThemeToggleBtn svg .sunMoon {
+                            transform-origin: center center;
+                            transition: inherit;
+                            transform: scale(1);
+                        }
 
-                    .st-sunMoonThemeToggleBtn svg .sunRay5 {
-                        animation-delay: 0.25s !important;
-                    }
-
-                    .st-sunMoonThemeToggleBtn svg .sunRay5 {
-                        animation-delay: 0.29s !important;
-                    }
-
-                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
-                        transform: rotate(90deg);
-                    }
-
-                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
-                        transform: translate(16px, -3px);
-                    }
-
-                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
-                        transform: scale(0.55);
-                    }
-
-                    .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
-                        animation: showRay1832 0.4s ease 0s 1 forwards;
-                    }
-
-                    @keyframes showRay1832 {
-                        0% {
+                        .st-sunMoonThemeToggleBtn svg .sunRay {
+                            transform-origin: center center;
                             transform: scale(0);
                         }
 
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-                </style>
-
-                <a href="/contact.html" class="hidden lg:flex">
-                    <button
-                        class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
-                        <h1 class="text-white">Contact Us</h1>
-                        <i class="ri-arrow-right-up-line bg-white rounded-full px-1"></i>
-                    </button>
-                </a>
-            </div>
-
-            <div class="lg:hidden flex flex-row items-center">
-                <label for="themeToggle"
-                    class="themeToggle st-sunMoonThemeToggleBtn text-sm md:text-l lg:text-lg right-1" type="checkbox">
-                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
-                    <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
-                        <mask id="moon-mask">
-                            <rect x="0" y="0" width="20" height="20" fill="white"></rect>
-                            <circle cx="11" cy="3" r="8" fill="black"></circle>
-                        </mask>
-                        <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
-                        <g>
-                            <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
-                            <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
-                            <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
-                            <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
-                            <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
-                            <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
-                        </g>
-                    </svg>
-                </label>
-
-                <style>
-                    body {
-                        transition: background-color 0.3s, color 0.3s;
-                    }
-
-                    body.light-theme {
-                        --logo-color: black;
-                        background-color: #ffffff;
-                        color: #000000;
-                    }
-
-                    body.dark-theme {
-                        --logo-color: white;
-                        background-color: #000000;
-                        color: #ffffff;
-                    }
-
-                    #logo {
-                        mix-blend-mode: difference;
-                        filter: invert(1);
-                        transition: filter 0.3s;
-                    }
-
-                    body.light-theme #logo {
-                        mix-blend-mode: unset;
-                        filter: none;
-                    }
-
-                    body.dark-theme #logo {
-                        mix-blend-mode: difference;
-                        filter: invert(1);
-                    }
-
-                    main i {
-                        color: #000;
-                    }
-
-                    .photu h1 {
-                        color: #000;
-                    }
-
-                    #ser {
-                        color: white;
-                    }
-
-                    #team {
-                        color: #858585;
-                    }
-
-                    #mobile-menu a,
-                    #mobile-menu i {
-                        color: black;
-                    }
-
-                    .services h3 {
-                        color: black;
-                    }
-                </style>
-
-                <script>
-                    document.addEventListener('DOMContentLoaded', (event) => {
-                        const themeToggleInput = document.getElementById('themeToggle');
-                        const currentTheme = localStorage.getItem('theme') || 'light';
-                        document.body.classList.add(currentTheme + '-theme');
-                        if (currentTheme === 'dark') {
-                            themeToggleInput.checked = true;
+                        .st-sunMoonThemeToggleBtn svg mask>circle {
+                            transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+                            transform: translate(0px, 0px);
                         }
 
-                        themeToggleInput.addEventListener('change', () => {
-                            if (themeToggleInput.checked) {
-                                document.body.classList.remove('light-theme');
-                                document.body.classList.add('dark-theme');
-                                localStorage.setItem('theme', 'dark');
-                            } else {
-                                document.body.classList.remove('dark-theme');
-                                document.body.classList.add('light-theme');
-                                localStorage.setItem('theme', 'light');
+                        .st-sunMoonThemeToggleBtn svg .sunRay2 {
+                            animation-delay: 0.05s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay3 {
+                            animation-delay: 0.1s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay4 {
+                            animation-delay: 0.17s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                            animation-delay: 0.25s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                            animation-delay: 0.29s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
+                            transform: rotate(90deg);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
+                            transform: translate(16px, -3px);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
+                            transform: scale(0.55);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
+                            animation: showRay1832 0.4s ease 0s 1 forwards;
+                        }
+
+                        @keyframes showRay1832 {
+                            0% {
+                                transform: scale(0);
                             }
-                        });
-                    });
 
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
 
-                </script>
+                        body.dark-theme .iconooo {
+                            color: #0000ff;
+                        }
+                    </style>
 
-
-
-                <button id="menu-btn">
-                    <i class="ri-menu-5-line text-2xl"></i>
-                </button>
+                    <a href="/contact.html" class="hidden md:hidden lg:flex">
+                        <button
+                            class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
+                            <h1 class="text-white">Contact Us</h1>
+                            <i class="ri-arrow-right-up-line bg-white rounded-full px-1 iconooo"></i>
+                        </button>
+                    </a>
+                </div>
             </div>
         </nav>
+
         <div id="mobile-menu" style="font-family: 'Inter', sans-serif;"
             class="fixed top-0 left-0 w-full h-full bg-white hidden transition-transform transform -translate-x-full z-50 flex flex-col items-center justify-center">
             <button id="close-menu" class="absolute top-5 right-5 text-3xl">
                 <i class="ri-close-line"></i>
             </button>
-            <ul class="flex flex-col gap-6 text-lg font-semibold">
+            <ul class="flex flex-col gap-6 text-lg font-semibold text-center">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/services.html">Service</a></li>
@@ -315,7 +344,7 @@ a.active {
 
         <section class="px-2 py-12 lg:px-12 w-full" style="font-family: 'Archivo', sans-serif;">
             
-            <div class="container mt-3 lg:mt-7 w-full">
+            <div class="container mx-auto mt-3 lg:mt-7 w-full">
                 <div class="flex flex-col md:flex-row justify-between items-start gap-6">
                     <div class="w-full md:w-1/2 lg:w-1/3 space-y-4 px-6 lg:px-0">
                         <h2 class="text-3xl md:text-2xl lg:text-3xl font-bold text-blue-600">Contact Information</h2>
@@ -335,7 +364,7 @@ a.active {
                         </div>
                     </div>
     
-                    <div class="w-full md:w-[69%] bg-white p-6 rounded-lg -mt-0 md:-mt-10 lg:-mt-10">
+                    <div class="w-full md:w-[69%] p-6 rounded-lg -mt-0 md:-mt-10 lg:-mt-10">
                         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
                             <!-- Replace with your Access Key -->
                             <input type="hidden" name="access_key" value="4107d842-d4ba-4efb-827a-19a00b9f55dc">
@@ -562,7 +591,7 @@ a.active {
                 <div class="row flex flex-row justify-between">
                     <div class="col-lg-6 text-center lg:text-left">
                         <div class="copyright-text">
-                            <p class="text-gray-500">Copyright &copy; 2024, All Right Reserved <a href="Devndez.xyz"
+                            <p class="text-gray-500">Copyright &copy; 2024, All Right Reserved <a href="#"
                                     class="text-blue-600">Dev N Dez</a></p>
                         </div>
                     </div>
